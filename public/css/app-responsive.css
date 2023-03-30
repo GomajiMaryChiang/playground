@@ -1,0 +1,275 @@
+
+/* RESPONSIVE
+-------------------------------------------------- */
+/* Between Medium and Small size 1366x 1281 */
+@media only screen and (max-width: 1680px) and (min-width: 1367px) {
+    .topBtn {
+        bottom: 5rem;
+        right: 6rem;
+    }
+}
+
+/* Between Medium and Small size 1366x 1281 */
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
+    .topBtn {
+        bottom: 5rem;
+        right: 3rem;
+    }
+}
+
+/* Between Medium and Small size 1280x 800 */
+@media only screen and (max-width: 1280px) and (min-width: 1199px) {
+    .topBtn {
+        bottom: 5rem;
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1198px) and (min-width: 1025px) {
+    .topBtn {
+        bottom: 5rem;
+        right: 2rem;
+    }
+}
+
+/* iPad 橫式 1024x768 */
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+    .topBtn {
+        bottom: 5rem;
+        right: 1rem;
+    }
+    .titleBox .title {
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .titleBox .title {
+        margin-left: 2rem;
+    }
+    .awardBox,
+    .invite-awardBox{
+        height: auto;
+    }
+    .section img {
+        width: 90%;
+    }
+    .section .title{
+        margin: 5.5rem auto 0;
+    }
+    .section p{
+        font-size: 1.8rem;
+        margin: 1rem 0 0 0;
+    }
+    .title-service {
+        margin-top: 7rem !important;
+    }
+    .download h3{
+        font-size: 2rem;
+    }
+    .download {
+        padding: 2rem 0 2rem;
+    }
+    .download .app-download-area {
+        margin: 1rem 0 0 0.3rem;
+    }
+}
+
+/* iPad 直式 size800x600 */
+@media only screen and (max-width: 969px) and (min-width: 500px) {
+    .col-sm-6 {
+        width: 50% !important;
+    }
+    .topBtn {
+        bottom: 5rem;
+        right: 0.5rem;
+    }
+    .titleBox .title {
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .iphone{
+        width: 100%;
+        margin-left: 0;
+    }
+    .app-invite-download-area {
+        margin: 1rem 0 0 0;
+    }
+    .app-download-area .app-download-btn {
+        margin-left: 0.5rem;
+    }
+    .app-download-phone {
+        margin: 1rem 0rem 0 1rem;
+    }
+    .awardBox, .invite-awardBox {
+        height: auto;
+        margin-top: -7rem;
+    }
+    .section {
+        margin: 2rem 0 0.5rem;
+    }
+    .section img {
+        width: 100%;
+    }
+    .section p {
+        font-size: 1.4rem;
+        display: block;
+        text-align: center;
+        margin: 1rem 0 0 0;
+        line-height: 2.5rem;
+    }
+    .download h3{
+        font-size: 1.5rem;
+    }
+    .tabBox li a{
+        padding: 0.6rem 1rem;
+    }
+    .copy-gomaji {
+        top: 56%;
+        left: 20%;
+    }
+    .download .app-download-area {
+        margin: 2rem 0 0 0rem;
+    }
+}
+
+/* APP and mobile */
+@media (max-width: 500px) {
+    .order-first {
+        -ms-flex-order: 0 !important;
+        order: 0 !important;
+    }
+    .tabBox ul.tabs{
+        width: 100%;
+    }
+    .topBtn {
+        bottom: 3rem;
+        right: 0.5rem;
+    }
+    .topBtn a{
+        width: 40px;
+        height: 40px;
+        padding: 0.3rem 0 0;
+    }
+    .topBtn a span {
+        margin-top: -0.6rem;
+        font-size: 0.85rem;
+    }
+    .titleBox .title, .iphone, .award, .footer {
+        display: none;
+    }
+    .titleBox .m-title, .m-award, .footer-mm {
+        display: block;
+    }
+    .col-sm-6{
+        width: 50% !important;
+    }
+    body {
+        background: url(../images/app/m_kv_bg.png) no-repeat top #FFF !important;
+    }
+    .wrapper {
+        margin: 65px 0 0;
+    }
+    .tabBox{
+        height: 65px;
+        padding-top: 0.6rem;
+    }
+    .tabBox ul.tabs{
+        width: 100%;
+    }
+    .tabBox li a {
+        padding: 0.4rem 0;
+        font-size: 1.1rem;
+    }
+    .wrap-topview{
+        padding-top: 0;
+    }
+    .titleBox{
+        margin-top: 0;
+    }
+    .titleBox .title{
+        margin-left: 0;
+        width: 100%;
+    }
+    .title-service {
+        margin-top: 0 !important;
+    }
+    .app-download-area{
+        margin: 0.5rem;
+    }
+    .app-download-area .app-download-btn{
+        margin: 0 0.3rem;
+    }
+    .app-download-phone {
+        margin: 1rem;
+    }
+    .app-download-area, .app-invite-download-area{
+        margin: 1rem 0 0 0;
+    }
+    .app-invite-download-area .app-download-btn a {
+        margin:1rem 0 1rem 1.5rem;
+        display: block;
+    }
+    .app-invite-download-area .qrcode{
+        margin: 0 1rem;
+    }
+    .awardBox, .invite-awardBox{
+        margin-top: 0;
+        height: auto;
+    }
+    .copy-gomaji {
+        top: 40%;
+        left: 40.5%;
+    }
+    .copy-gomaji span.copy{
+        font-size: 1.05rem;
+    }
+    .copy_value {
+        top: 30%;
+        left: 30.5%;
+    }
+    .copy_value i{
+        font-size: 1.2rem;
+    }
+    .section {
+        margin: 0 0 1rem;
+        padding: 0 1rem;
+    }
+    .section img{
+        width: 100%;
+    }
+    .section .title{
+        margin: 0 auto;
+    }
+    .section p {
+        font-size: 1.4rem;
+        margin: 0;
+        line-height: 2.3rem;
+    }
+    .section a.note {
+        font-size: 0.9rem;
+        margin: 0 1rem 0.5rem;
+    }
+    .section .s-l {
+        margin: 0;
+    }
+    .fancybox-content h2 {
+        font-size: 1.5rem;
+    }
+    .popupBox .main{
+        padding: 1rem;
+    }
+    .popupBox .main ul li{
+        line-height: 1.5rem;
+    }
+    .download h3{
+        font-size: 1.5rem;
+    }
+    .download{
+        padding: 2rem 0;
+    }
+    .download .app-icon img{
+        width: 80px;
+    }
+    .download .app-download-area{
+        margin: 1rem 0;
+    }
+}

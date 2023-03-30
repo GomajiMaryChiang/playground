@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gomaji-usagi
+  labels:
+    app: g-usagi
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: g-usagi
+  template:
+    metadata:
+      labels:
+        app: g-usagi
+        version: "{{.version}}"
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+    spec:
+      hostAliases:
+        - ip: "10.100.0.111"
+          hostnames:
+            - "ddd.gomaji.com"
+      volumes:
+        - name: log-volume
+          emptyDir: {}
+        - name: laravel-log-volume
+          emptyDir: {}
+        - name: log-config-volume
+          configMap:
+            name: usagi-log-config
+            items:
+            - key: fluent.conf
+              path: fluent.conf
+      containers:
+        - name: g-usagi
+          image: {{.image}}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: environment
+              value: stage
+          volumeMounts:
+            - mountPath: /var/log/
+              name: log-volume
+            - mountPath: /var/www/html/storage/logs/
+              name: laravel-log-volume
+          resources:
+            limits:
+              memory: 900Mi
+            requests:
+              cpu: 300m
+              memory: 500Mi
+          livenessProbe:
+            initialDelaySeconds: 10
+            periodSeconds: 300
+            timeoutSeconds: 3
+            successThreshold: 1
+            failureThreshold: 1
+            httpGet:
+              path: /api/healthy
+              port: 80
+        - name: logging
+          image: {{.fluentd_image}}
+          volumeMounts:
+            - mountPath: /var/log/
+              name: log-volume
+            - mountPath: /fluentd/etc/
+              name: log-config-volume
+            - mountPath: /var/log/laravel/
+              name: laravel-log-volume
+          resources:
+            limits:
+              cpu: 100m
+              memory: 300Mi
+            requests:
+              cpu: 0
+              memory: 100Mi

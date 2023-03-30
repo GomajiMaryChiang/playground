@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="56px" viewBox="0 0 375 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>商品推薦Bar</title>
+    <g id="Channel頻道+Product商品頁面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RS商品頁面-完售(推薦)" transform="translate(1.000000, -353.000000)">
+            <g id="商品推薦Bar" transform="translate(-1.000000, 353.000000)">
+                <g id="drapbar-up" fill="#FF8800">
+                    <path d="M206.64041,0 C207.530469,1.61285565e-15 208.313426,0.588184078 208.561292,1.44303332 L212.782,16 L375,16 L375,56 L0,56 L0,16 L168.216,16 L172.438162,1.44303332 C172.686028,0.588184078 173.468985,1.05167961e-15 174.359044,0 L206.64041,0 Z" id="Combined-Shape"></path>
+                </g>
+                <polygon id="product_gray_arrow_down" fill="#FFFFFF" transform="translate(189.000000, 11.500000) rotate(90.000000) translate(-189.000000, -11.500000) " points="185 6.5 186.5 5 193 11.5 186.5 18 185 16.5 190 11.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

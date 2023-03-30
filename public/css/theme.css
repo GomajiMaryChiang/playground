@@ -1,0 +1,140 @@
+/* home-banners-wrapper and 背景主題-----
+-------------------------------------*/
+
+.gomaji-banners-wrapper {
+    background-image: url(../images/theme/bg-banner.png);
+    background-position: top center;
+}
+
+/* index 2021聖誕節 ------*/
+.gomaji-banners-wrapper.theme.christmas2021 {
+    background-image: url(../images/theme/bg-christmas2021.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* index 2022元旦 New Year ------*/
+.gomaji-banners-wrapper.theme.newyear2022 {
+    background-image: url(../images/theme/bg-NewYear2022.jpg);
+    background-position: top center;
+    background-color: transparent;
+    background-size: contain;
+}
+
+/* index 2022過年 ------*/
+.gomaji-banners-wrapper.theme.chinesenewyear2022 {
+    background-image: url(../images/theme/bg-ChineseNewYear2022.jpg);
+    background-position: top center;
+    background-color: transparent;
+    background-size: contain;
+    
+}
+
+/* index 20211228快車肉乾品牌日 ------*/
+.gomaji-banners-wrapper.theme.kuaiche {
+    background-image: url(../images/theme/bg-kuaiche.jpg);
+    background-position: top center;
+    background-color: transparent;
+    background-size: cover;
+}
+
+/* index 202203東旅品牌日 ------*/
+.gomaji-banners-wrapper.theme.east {
+    background-image: url(../images/theme/bg-east202203.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* index 202203東旅品牌日 ------*/
+.gomaji-banners-wrapper.theme.tango {
+    background-image: url(../images/theme/bg-tango202204.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* index 202204漢堡王品牌日 ------*/
+.gomaji-banners-wrapper.theme.burgerking{
+    background-image: url(../images/theme/bg-burgerking202204.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* index 202204漢堡王品牌日 ------*/
+.gomaji-banners-wrapper.theme.lealea{
+    background-image: url(../images/theme/bg-LEALEA202209.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* index 2021聖誕節 ------*/
+.gomaji-banners-wrapper.theme.Halloween2022 {
+    background-image: url(../images/theme/bg-Halloween2022.png);
+    background-position: top center;
+    background-color: transparent;
+}
+.Halloween2022 .channel-item .title{
+    color: #c79dff;
+}
+
+/* index 2022聖誕節 ------*/
+.gomaji-banners-wrapper.theme.christmas2022 {
+    background-image: url(../images/theme/bg-christmas2022.png);
+    background-position: top center;
+    background-color: transparent;
+}
+
+.christmas2022 .channel-item .title{
+    color: #ffd552;
+}
+
+/* index 2023 chinese new year 過年 ------*/
+.gomaji-banners-wrapper.theme.chinesenewyear2023 {
+    background-image: url(../images/theme/bg-ChineseNewYear2023.png);
+    background-position: top center;
+    background-color: transparent;
+}
+
+.chinesenewyear2023 .channel-item .title{
+    color: #a90924;
+}
+
+/* index 2023 福容大飯店 ------*/
+.gomaji-banners-wrapper.theme.FullonHotel {
+    background-image: url(../images/theme/bg-FullonHotel202303.jpg);
+    background-position: top center;
+    background-color: transparent;
+}
+
+/* home-banners-wrapper and 背景主題 RWD-----
+---------------------------------------------*/
+/* iPad 橫式 1024x768 */
+@media only screen and (max-width: 1920px) {
+    
+}
+
+/* iPad 橫式 1024x768 */
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+    .gomaji-banners-wrapper.theme {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 969px) and (min-width: 800px) {
+    .gomaji-banners-wrapper.theme {
+        background-image: none;
+    }
+}
+
+/* iPad 直式 size800x600 */
+@media only screen and (max-width: 799px) and (min-width: 500px) {
+    .gomaji-banners-wrapper.theme {
+        background-image: none;
+    }
+}
+
+/* 660px and mobile */
+@media (max-width: 500px) {
+    .gomaji-banners-wrapper.theme {
+        background-image: none;
+    }
+}

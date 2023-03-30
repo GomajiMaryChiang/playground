@@ -1,0 +1,366 @@
+/*新改版版型2019/12 */
+
+/*共用 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;font-weight: normal;
+    font-family: "蘋果儷中黑","Apple LiGothic Medium","微軟正黑體","Microsoft JhengHei","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #333333;
+}
+p ,h1 ,h2, h3, h4, h5{
+    font-family: "蘋果儷中黑","Apple LiGothic Medium","微軟正黑體","Microsoft JhengHei","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-weight: normal;
+    color: #333333;
+}
+ol,ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a, a:hover{
+    text-decoration: none !important;
+}
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+p{
+    margin-bottom: 0.3rem !important;
+}
+.clear {
+    clear:both; 
+    height:0; 
+    font-size:0; 
+    line-height:0;
+}
+.relative{
+    position: relative;
+}
+.t-08{
+    font-size: 0.8rem;
+}
+.t-085{
+    font-size: 0.85rem;
+}
+.t-09{
+    font-size: 0.9rem;
+}
+.t-10{
+    font-size: 1rem;
+}
+.t-11{
+    font-size: 1.1rem;
+}
+.t-12{
+    font-size: 1.2rem;
+}
+.t-white{
+    color: #FFFFFF;
+}
+.t-orange{
+    color: #FF8800;
+}
+.t-red{
+    color: #FF3100;
+}
+.t-yellow{
+    color: #FF3100;
+}
+.bg-white{
+    background-color: #FFFFFF;
+}
+.col-l{
+    float: left;
+}
+.col-r{
+    float: right;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.btn-orange{
+    background-color: #FF8800;
+    color: #FFF;
+    border: 1px solid #FF8800;
+}
+
+/*tabBox*/
+.tabBox {
+    width: 100%;
+    height:80px;
+    position:fixed;
+    top: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+    z-index: 1001;
+    display:block; 
+    background-color:#ffce84;
+}
+.tabBox ul.tabs{
+    width: 60%;
+    margin: 0 auto;
+}
+.tabBox ul li{
+    float: left;
+    display: block;
+    width: 50%;
+    padding: 0 0.5rem;
+}
+.tabBox li a {
+    background-color: #ffb83f;
+    border: 4px solid #ffb83f;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    display: block;
+}
+.tabBox li.active a{
+    background-color: #FF8800;
+    border: 4px solid #ffe1ae;
+}
+
+/*GO TO TOP Btn*/
+.topBtn { 
+    bottom: 6rem; 
+    right: 15rem;  
+    padding: 0; 
+    position: fixed; 
+    text-align: center; 
+    z-index: 9999;
+}
+.topBtn a { 
+    display: block; 
+    margin:0; 
+    z-index: 100;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    font-size: .9rem;
+    padding:0.5rem 0 0;
+    background-color: #FF8800;
+}
+.topBtn a span {
+    padding: 0;
+    margin-top: -0.6rem;
+    display: block;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.chevron-up{
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTYgMTEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+cGluLXVwPC90aXRsZT4KICAgIDxnIGlkPSJQQy1TeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0icGluLXVwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4LjAwMDAwMCwgNS43MzAwMDApIHJvdGF0ZSgtMjcwLjAwMDAwMCkgdHJhbnNsYXRlKC04LjAwMDAwMCwgLTUuNzMwMDAwKSB0cmFuc2xhdGUoMy4yNTAwMDAsIC0yLjI1MDAwMCkiIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iQmFjay1DaGV2cm9uIiBwb2ludHM9IjAgNy45OCA3Ljk4IDAgOS41IDEuNTIgMy4wNCA3Ljk4IDkuNSAxNC40NCA3Ljk4IDE1Ljk2Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+    width: 16px;
+    height: 10px;
+    background-size: 16px 10px;
+    margin: 0.2rem auto 0.4rem;
+    display: block;
+}
+
+/*wrap-topview*/
+.titleBox .m-title, .m-award, .footer-mm {
+    display: none;
+}
+body {
+    width: 100vw;
+    position: relative;
+    background: url(../images/app/kv_bg.png) no-repeat top #FFF !important;
+    background-size: 100% 100%;
+}
+.wrapper {
+   margin: 80px 0 0;
+}
+.wrap-topview{
+    padding-top: 0.5rem;
+}
+.titleBox{
+    margin-top: 60px;
+}
+.titleBox .title{
+    margin-left: 6rem;
+}
+.app-download-area, .app-invite-download-area{
+    margin: 0.5rem 0 0 7rem;
+}
+.app-download-area .app-download-btn {
+    margin-left: 1.5rem;
+}
+.app-download-phone{
+    margin: 0.5rem 1rem 0 8.8rem;
+}
+.app-invite-download-area .app-download-btn a {
+    margin:0.7rem 0 0.2rem 1.5rem;
+    display: block;
+}
+.app-invite-download-area .qrcode{
+    margin-left: 2.5rem;
+}
+.app-invite-download-area .qrcode img{
+    border: 1px solid #cacaca;
+    padding: 0.2rem;
+}
+.iphone{
+    margin-left: 5rem;
+}
+.awardBox, .invite-awardBox {
+    width: 100vw;
+    height: 430px;
+    margin-top: -2.5rem;
+}
+.awardBox-area{
+    position: relative;
+}
+.copy-gomaji{
+    position: absolute;
+    top: 59%;
+    left: 23%;
+}
+.copy-gomaji span.copy {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.copy_value {
+    position: absolute;
+    top: 44%;
+    left: 18.5%;
+}
+.copy_value i{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+.btn:active,
+.btn:visited,
+.btn:focus,
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus{
+    outline: none;
+    box-shadow: none;
+    border-color:#FF8800;
+}
+
+.sweet-alert .sa-icon.sa-success .sa-placeholder{
+    border: 4px solid #FF8800 !important;
+}
+.sweet-alert .sa-icon.sa-success .sa-line{
+    background-color: #FF8800 !important;
+}
+.sweet-alert h2{
+    font-size: 2rem !important;
+    margin-top: 1.5rem;
+}
+.sweet-alert button{
+    background-color: #FF8800 !important;
+}
+
+/*main-section*/
+#tabs-1, #tabs-2 {
+    width: 100%;
+}
+.section{
+    margin: 3rem 0 4rem;
+}
+.section .pic{
+    display: block;
+    margin: 0 auto;
+}
+.section .title {
+    display: block;
+    margin: 5rem auto 0;
+}
+.section p {
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        margin: 1.5rem 0 0 2rem;
+        line-height: 3rem;
+}
+.section a.note {
+    text-align: right;
+    display: block;
+    color: #FF8800;
+    font-size: 1.1rem;
+    text-decoration: underline !important;
+    margin: 3rem 2rem 0 0;
+}
+.section .s-l{
+    margin: 1.5rem 0 0 0rem;
+}
+.title-service{
+    margin-top: 9rem !important;
+}
+.fancybox-content{
+    padding: 0 !important;
+    border-radius: 1.5rem; 
+}
+.fancybox-content h2{
+    background-color: #FF8800;
+    padding: 1.5rem;
+    color: #FFF;
+}
+.fancybox-slide--html .fancybox-close-small{
+    color: #FFF !important;
+}
+.popupBox .main{
+    padding: 1.5rem 2rem;
+}
+.popupBox .main ul li{
+    line-height: 2rem;
+    list-style: outside disc;
+    margin: 0 0 0 1rem;
+}
+
+/*download*/
+.download{
+    background-color: rgb(255 241 217);
+    padding: 3rem 0;
+}
+.download .app-icon img{
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.download h3{
+    color: #FF8800;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.download .app-download-area{
+    margin: 2rem 0 0 3rem;
+}
+
+/*Footer*/
+.footer {
+    height: 60px;
+    background-color: #FF8800;
+}
+.footer .logo, .footer .fb-like-footer {
+    padding: 1.1rem 2rem 0 0;
+}
+.footer-mm {
+    position: relative;
+    width: 100%;
+    background-color: #333333;
+    height: 50px;
+}
+.footer-mm .logo {
+    margin: 0.85rem 1rem 0;
+}
+.footer-mm .fb-like {
+    top: 0.4rem;
+    left: 3.5rem;
+    position: absolute;
+}

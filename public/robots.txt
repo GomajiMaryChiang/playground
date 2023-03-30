@@ -1,0 +1,50 @@
+User-agent: *
+Disallow: /preview
+Disallow: /epaper
+Disallow: /store_violation
+Disallow: /store_highPrice
+Disallow: /information
+Disallow: /sendAppSms
+Disallow: /rating-form
+Disallow: /rating-done
+Disallow: /view-rating
+Disallow: /search
+
+User-agent: Alexabot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Mechanize
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Mediatoolkitbot
+Disallow: /
+
+User-agent: ICC-Crawler
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: proximic
+Disallow: /

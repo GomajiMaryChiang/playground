@@ -1,0 +1,82 @@
+/*修改部份*/
+
+body {
+    width: 100%;
+    text-align: center;
+    background: url(../images/bg.jpg) no-repeat top fixed #ea4096;
+}
+
+header, .footer {
+    background-color: #21201f;
+}
+
+/* wrapper kv-主視覺 */
+
+.wrapper {
+    background: #ea4096;
+    /* 也可以固定主視覺背景 */
+}
+
+.wrap-topview {
+    background: url(../images/kv-bg.jpg) no-repeat top;
+    /* 主視覺背景 */
+    height: 700px;
+}
+
+/* main-section 內容檔次 */
+
+.main-section {
+    background: transparent !important;
+}
+
+.toppic-pid-box {
+    background-color: #fff7ea; /* 改背景顏色 */
+    border: 5px solid #2e3292; /* 改border顏色 */
+}
+
+/* 活動說明 */
+
+.policyBox {
+    background-color: #ffd4de;
+}
+
+.policy h3 {
+    color: #f54444;
+    border: 2px solid #f54444;
+}
+
+.policy h4, .policy p span {
+    color: #F54444;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 1600px) {
+    
+}
+
+@media (max-width: 1366px) {
+    
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+/* APP and mobile */
+@media (max-width: 576px) {
+
+    .mm-wrap-topview .title_kv .kv {
+        height: auto;
+    }
+
+    .toppic-pid-box h3.sub-title img{
+        width: 70%;
+    }
+}

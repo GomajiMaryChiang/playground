@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv sh
+
+case ${environment} in
+  "dev" )
+    cp /var/www/html/.env.dev /var/www/html/.env
+    ;;
+  "uat" )
+    cp /var/www/html/.env.uat /var/www/html/.env
+    ;;
+  "prod" )
+    cp /var/www/html/.env.prod /var/www/html/.env
+    ;;
+  "gke" )
+    cp /var/www/html/.env.prod /var/www/html/.env
+    ;;
+  "stage" )
+    cp /var/www/html/.env.prod /var/www/html/.env
+    ;;
+  * )
+    ;;
+esac

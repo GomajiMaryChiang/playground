@@ -1,0 +1,122 @@
+/*bootstrap5.1.1 更新 修正css */
+
+/* Header and TOP banner區塊 */
+
+.header-social .gomaji-social a, .searchbar-wrap .keyword a.keyword-link, a.copycode, .breadcrumb li a{
+        text-decoration: none;
+}
+
+.gomaji-banners-wrapper .first-cover{
+        max-height: 324px;
+}
+
+.first-cover .owl-nav .owl-prev, .first-cover .owl-nav .owl-next{
+        top: 7.5rem;
+}
+
+.first-cover .owl-dots, .mm-hot-category .owl-dots{
+        bottom: 0.5rem;
+}
+
+.mm-header .toolBar {
+        top: 35%;
+}
+
+/* About 關於我們 */
+
+.menubar ul li a{
+        color: #333333;
+}
+
+.toolBar a{
+        text-decoration: none;
+}
+
+.timeline:before{
+        left: 9.7rem;
+}
+
+.about-section .timeline{
+        position: relative;
+}
+
+/* Help 客服中心 */
+
+.accordion-button:not(.collapsed){
+        background-color: #FFF;
+        box-shadow:none;
+}
+
+.accordion-button::after{
+        background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+        background-image: none;
+}
+
+.accordion>.card .btn[aria-expanded="true"]:after{
+        font-size: 1.2rem;
+        right: -0.6rem;
+}
+
+.accordion-body {
+        padding: 1rem 1.3rem;
+}
+
+.card-header{
+        border-bottom: none;
+}
+
+.message a{
+        text-decoration: none;
+}
+
+/* KOL 網紅 */
+
+.kol-tabs ul li a{
+        color: #333;
+}
+
+.kol-main .tabBox{
+        height: 96px;
+        overflow: hidden;
+}
+
+.kol-contentBox{
+        margin-top: -1rem;
+}
+
+.tab-bar ul li.active a, .tab-bar ul li a{
+        text-decoration: none;
+}
+
+.wf-box{
+        width: auto;
+}
+
+.wf-box .ig iframe{
+        min-width: 100% !important;
+}
+
+.kol-you-contentBox .kol-contentBox{
+        margin-top: -2.5rem;
+}
+
+.kol-tabs ul li.active a.nav-link, .kol-tabs ul li:hover a.nav-link, .kol-tabs ul li:focus a.nav-link{
+        color: #FF8800;
+    }
+
+
+@media (max-width: 500px){
+.mm-kol-tabs .nav-item a.nav-link {
+    color: #333;
+        }
+
+.tabBox .nav-item a.nav-link{
+        height: 50px;
+}
+.kol-contentBox{
+        margin-top: -2.5rem;
+}
+}

@@ -1,0 +1,583 @@
+/* event ARPU 我要登記頁面-----
+-------------------------------------*/
+
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding-top: 0.7rem;
+    z-index: 1001;
+    display: block;
+    background-color: #000000;
+    opacity: 1;
+}
+
+.header .gomaji-logo {
+    margin-top: 0.1rem;
+    display: block;
+}
+
+.header .socialBox a {
+    text-indent: -9999px;
+    width: 27%;
+}
+
+.header .socialBox .fb-like {
+    z-index: 1010;
+    float: right;
+    width: 188px;
+    height: 47px;
+    padding: 14px 0px 0px 40px;
+    display: block;
+    background: url(../images/event/FB_bt.png) no-repeat top left;
+    background-size: 188px 47px;
+    margin-right: 0.5rem;
+}
+
+.header .socialBox a.ios_bt {
+    background: url(../images/event/ios_bt.png) no-repeat top left;
+}
+
+.header .socialBox a.googleplay_bt {
+    background: url(../images/event/googleplan_bt.png) no-repeat top left;
+}
+
+.wrapper .main {
+    margin-top: 70px;
+}
+
+.topBtn {
+    bottom: 5rem;
+}
+
+.wrap-topviewBox {
+    background-image: url(../images/event/bg-kv.png?1656647123);
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow-x: hidden;
+}
+
+.wrap-topviewBox .kv-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.kv-title-mm {
+    display: none;
+}
+
+.main-section {
+    background-color: #ffffd2;
+}
+
+.main-section h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #21376c;
+    line-height: 1.2;
+    padding-top: 2.5rem;
+}
+
+.badge {
+    background-color: #21376c;
+    color: #ffd068;
+    position: absolute;
+    right: 3rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    border: 3px solid #ffd068;
+}
+
+.main-section h1 span {
+    font-size: 6.1rem;
+    color: #ffd068;
+    text-shadow: -2px 0 #21376c, 0 2px #21376c, 2px 0 #21376c, 0 -2px #21376c;
+}
+
+.tabelBox {
+    border: 8px solid #ffd068;
+    background-color: #21376c;
+    border-radius: 10px;
+    margin: 2rem auto 3rem;
+}
+
+.tabelBox table{
+    border: 3px solid #21376c;
+    border-radius: 10px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead td {
+    border-right: 1px solid #017546;
+    border: 1px solid #017546;
+    color: #017546;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #017546;
+    border-top: none;
+    border-right: 1px solid #017546;
+    background-color: #21376c;
+    color: #ffffd2;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.bg-lightyellow {
+    background-color: #fffbee !important;
+}
+
+.table tr {
+    background-color: #fff2cd;
+}
+
+.table td {
+    border-right: 1px solid #017546;
+    border-bottom: none;
+    border-top: none;
+    padding: 10px 30px;
+    color: #444;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tr td:last-child {
+    border-right: 1px solid #017546;
+}
+
+.table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.register-btn.disabled {
+    background-color: #dcdcdc;
+    color: #21376c;
+}
+
+.register-btn.disabled:hover {
+    background-color: #dcdcdc;
+    color: #21376c;
+}
+
+.register-btn {
+    background-color: #21376c;
+    color: #ffd068;
+    display: block;
+    width: 40%;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 2.3;
+    border: 8px solid #ffd068;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-animation: heartbeat 2s ease-in-out infinite both;
+    animation: heartbeat 2s ease-in-out infinite both;
+}
+
+.register-btn:hover {
+    background-color: #ffd068;
+    border: 8px solid #21376c;
+    color: #21376c;
+    line-height: 2.3;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    transform: scale(1.08);
+}
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+.policyBox {
+    background-color: rgb(255 237 172);
+    padding: 2rem 0;
+}
+
+.policy h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #21376c;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.policy h4,
+.policy p span {
+    color: #21376c;
+    font-weight: 500;
+}
+
+.policy p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2e3e65;
+}
+
+.policy ul li {
+    list-style: outside disc;
+    margin-left: 1.7rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    color: #2e3e65;
+}
+
+.policy ul.list-number li {
+    list-style: outside decimal;
+}
+
+.footer,
+.footer-mm {
+    padding: 0.5rem 0;
+    background-color: #000000;
+}
+
+.footer-mm {
+    display: none;
+}
+
+.fb-like {
+    top: 0.2rem;
+    right: 20px;
+    position: absolute;
+}
+
+/* popupBox --------------------------------------------*/
+
+.popupBox {
+    background-color: #ffde67;
+}
+
+.popupBox p {
+    color: #f54444;
+}
+
+.popupBox a.btn-orange {
+    margin: 1rem auto 0;
+    background-color: #ffb901;
+    border: 3px solid #fee240;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    width: 80%;
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #000;
+    border-radius: 30px;
+}
+
+.popupBox .main .panel-box .remind {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.download-btn a.btn-orange {
+    margin: 1rem 0.5rem 0;
+    width: 50%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.download-btn a.green-btn {
+    margin: 1rem 0.5rem 0;
+    width: 50%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+}
+
+.popupBox a.green-btn {
+    background-color: #f54444;
+    border-radius: 0.5rem;
+    color: #ffde67;
+    margin: 1rem 0.5rem 0;
+    padding: 0.8rem;
+    display: block;
+    text-align: center;
+}
+
+.icon-ios {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2223px%22%20height%3D%2230px%22%20viewBox%3D%220%200%2023%2030%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2057.1%20%2883088%29%20-%20https%3A//sketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3Eapple%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22ios_black%22%20transform%3D%22translate%28-12.000000%2C%20-8.000000%29%22%20fill%3D%22%23FFFFFF%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M23.683999%2C17.1073079%20C24.7943234%2C17.1073079%2026.9085938%2C15.5340606%2029.0882427%2C15.7693656%20C30.0002158%2C15.7966474%2032.5954052%2C16.1388059%2034.2697567%2C18.6430428%20C34.1345675%2C18.7260248%2031.1781348%2C20.5084321%2031.2102699%2C24.1721431%20C31.2468375%2C28.5633673%2034.9545676%2C30.0149835%2035%2C30.0308979%20C34.9778378%2C30.1332044%2034.4193513%2C32.1259085%2033.0286755%2C34.1493046%20C31.8673781%2C35.9305752%2030.6506753%2C37.67206%2028.7181346%2C37.7038887%20C26.8409992%2C37.7482215%2026.2093776%2C36.5705595%2024.0563233%2C36.5705595%20C21.8833231%2C36.5705595%2021.2107014%2C37.67206%2019.4100256%2C37.7482215%20C17.5694579%2C37.8175626%2016.1632685%2C35.8464565%2014.959863%2C34.0811003%20C12.5541601%2C30.4764997%2010.6814572%2C23.9231972%2013.1924304%2C19.4637686%20C14.4091332%2C17.2766821%2016.6275659%2C15.868262%2018.9989174%2C15.8307496%20C20.8417014%2C15.7921004%2022.5515124%2C17.1073079%2023.683999%2C17.1073079%20Z%20M29.111513%2C8.75%20C29.2954589%2C10.4653397%2028.6328102%2C12.1556712%2027.6643236%2C13.3981273%20C26.653729%2C14.6212589%2025.0369991%2C15.5567954%2023.4623773%2C15.436301%20C23.2562692%2C13.7857554%2024.0541071%2C12.0306298%2024.9472423%2C10.9598213%20C25.9567289%2C9.74464695%2027.7097561%2C8.81365741%2029.111513%2C8.75%20Z%22%20id%3D%22apple%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: 35px 10px;
+}
+
+.icon-google {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2222px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2022%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2057.1%20%2883088%29%20-%20https%3A//sketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3Egoogle%20play%3C/title%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20x1%3D%2250%25%22%20y1%3D%220%25%22%20x2%3D%2250%25%22%20y2%3D%22100%25%22%20id%3D%22linearGradient-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%231E79AF%22%20offset%3D%220%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2363FFD3%22%20offset%3D%22100%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20x1%3D%2284.7178118%25%22%20y1%3D%2228.8782655%25%22%20x2%3D%225.24419544%25%22%20y2%3D%2277.6611704%25%22%20id%3D%22linearGradient-2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23DC4057%22%20offset%3D%220%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%239E36BB%22%20offset%3D%22100%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20x1%3D%2250%25%22%20y1%3D%220%25%22%20x2%3D%2250%25%22%20y2%3D%2297.8256537%25%22%20id%3D%22linearGradient-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23FF9676%22%20offset%3D%220%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23FFD074%22%20offset%3D%22100%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20x1%3D%2217.4435371%25%22%20y1%3D%2220.2975638%25%22%20x2%3D%22100%25%22%20y2%3D%2279.7024362%25%22%20id%3D%22linearGradient-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%2351C6AD%22%20offset%3D%220%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20stop-color%3D%22%23D5FFA1%22%20offset%3D%22100%25%22%3E%3C/stop%3E%0A%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3C/defs%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22google-play-black%22%20transform%3D%22translate%28-11.000000%2C%20-11.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22google-play%22%20transform%3D%22translate%2811.000000%2C%2012.000000%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0.938480335%2C-0.152995221%20C0.515889775%2C-0.0196989555%200.242410522%2C0.411708171%200.242410522%2C1.06440023%20L0.245015086%2C21.6064711%20C0.245015086%2C22.2519402%200.510029505%2C22.676781%200.920899526%2C22.8186135%20L12.3191241%2C11.3236163%20L0.938480335%2C-0.152995221%22%20id%3D%22left%22%20fill%3D%22url%28%23linearGradient-1%29%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0.920899526%2C22.8186135%20C1.21651758%2C22.9197348%201.58701685%2C22.8724573%201.99072432%2C22.6492025%20L15.9004%2C14.9350915%20L12.3191241%2C11.3236163%20L0.920899526%2C22.8186135%22%20id%3D%22bottom%22%20fill%3D%22url%28%23linearGradient-2%29%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M15.9023535%2C14.9350915%20L20.6452651%2C12.3052809%20C21.6070005%2C11.7701259%2021.6070005%2C10.8994321%2020.6452651%2C10.3655904%20L15.8847727%2C7.72593037%20L12.3191241%2C11.3216464%20L15.9023535%2C14.9350915%22%20id%3D%22right%22%20fill%3D%22url%28%23linearGradient-3%29%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M15.8841215%2C7.72593037%20L1.99072432%2C0.022325483%20C1.59678397%2C-0.19501966%201.23344724%2C-0.245580313%200.939131476%2C-0.152995221%20L12.3191241%2C11.3216464%20L15.8841215%2C7.72593037%22%20id%3D%22top%22%20fill%3D%22url%28%23linearGradient-4%29%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: 18px 13px;
+}
+
+/* --------------------------------------------*/
+@media only screen and (max-width: 1198px) and (min-width: 1025px) {
+    .header,
+    .kv-title,
+    .wrap-topviewBox .kv-bottom,
+    .footer {
+        display: none;
+    }
+
+    .wrapper .main {
+        margin-top: 0;
+    }
+
+    .kv-title-mm,
+    .footer-mm {
+        display: block;
+    }
+    .main-section h1 {
+        font-size: 4rem;
+        padding-top: 2.3rem;
+    }
+    .main-section h1 span {
+        font-size: 5.2rem;
+    }
+}
+/* iPad 橫式 1024x768 */
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+    .header,
+    .kv-title,
+    .wrap-topviewBox .kv-bottom,
+    .footer {
+        display: none;
+    }
+
+    .wrapper .main {
+        margin-top: 0;
+    }
+
+    .kv-title-mm,
+    .footer-mm {
+        display: block;
+    }
+    .main-section h1 {
+        font-size: 4rem;
+        padding-top: 2.3rem;
+    }
+    .main-section h1 span {
+        font-size: 5.2rem;
+    }
+}
+
+@media only screen and (max-width: 969px) and (min-width: 800px) {
+    .header,
+    .kv-title,
+    .wrap-topviewBox .kv-bottom,
+    .footer {
+        display: none;
+    }
+
+    .wrapper .main {
+        margin-top: 0;
+    }
+
+    .kv-title-mm,
+    .footer-mm {
+        display: block;
+    }
+    .main-section h1 {
+        font-size: 4rem;
+        padding-top: 2.3rem;
+    }
+    .main-section h1 span {
+        font-size: 5.2rem;
+    }
+    .register-btn{
+        width: 70%;
+    }
+}
+
+/* iPad 直式 size800x600 */
+@media only screen and (max-width: 799px) and (min-width: 500px) {
+    .header,
+    .kv-title,
+    .wrap-topviewBox .kv-bottom,
+    .footer {
+        display: none;
+    }
+
+    .wrapper .main {
+        margin-top: 0;
+    }
+
+    .kv-title-mm,
+    .footer-mm {
+        display: block;
+    }
+    .main-section h1 {
+        font-size: 3.5rem;
+        padding-top: 2.3rem;
+    }
+    .main-section h1 span {
+        font-size: 4.5rem;
+    }
+    .table thead th{
+        font-size: 1.4rem;
+    }
+    .register-btn{
+        width: 70%;
+    }
+}
+
+/* 660px and mobile */
+@media (max-width: 500px) {
+
+    .header,
+    .kv-title,
+    .wrap-topviewBox .kv-bottom,
+    .footer {
+        display: none;
+    }
+
+    .wrapper .main {
+        margin-top: 0;
+    }
+
+    .kv-title-mm,
+    .footer-mm {
+        display: block;
+    }
+
+    .badge {
+        right: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .main-section h1 {
+        font-size: 2.35rem;
+        font-weight: 500;
+        line-height: 1.4;
+        padding-top: 2.5rem;
+    }
+
+    .main-section h1 span {
+        font-size: 3rem;
+    }
+
+    .tabelBox {
+        margin: 1rem 0 2rem;
+    }
+
+    .table thead th {
+        font-size: 1.05rem;
+        padding: 0.75rem 0rem;
+    }
+
+    .table td {
+        font-size: 1.4rem;
+        padding: 10px 0;
+    }
+
+    .register-btn {
+        width: 80%;
+        margin: 0 auto 2.5rem;
+        font-size: 1.4rem;
+    }
+
+    .policyBox {
+        padding: 2rem 0 1rem;
+    }
+}

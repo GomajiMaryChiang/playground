@@ -1,0 +1,740 @@
+/* KOL 網紅頁面 ----------
+---------------------------------*/
+.kolbannerBox .cover {
+        padding: 0;
+        height: 370px;
+        overflow: hidden;
+}
+
+.kolbannerBox .cover .pc-banner {
+        -webkit-animation: loop 50s linear infinite;
+        animation: loop 50s linear infinite;
+}
+
+.kolbannerBox .cover .mm-banner,
+.mm-kol-tabs {
+        display: none;
+}
+
+.loop {
+        -webkit-animation-name: loop;
+        animation-name: loop;
+}
+
+@-webkit-keyframes loop {
+        0% {
+                opacity: 0;
+                transform: translate(0, 0);
+        }
+
+        3% {
+                opacity: 1;
+                transform: translate(0, 0);
+        }
+
+        8% {
+                opacity: 1;
+                transform: translate(0, 0);
+        }
+
+        95% {
+                opacity: 1;
+                transform: translate(0, -950px);
+        }
+
+        98% {
+                opacity: 0.9;
+                transform: translate(0, -980px);
+        }
+
+        100% {
+                opacity: 0;
+                transform: translate(0, -1000px);
+        }
+}
+
+@keyframes loop {
+        0% {
+                opacity: 0;
+                transform: translate(0, 0);
+        }
+
+        3% {
+                opacity: 1;
+                transform: translate(0, 0);
+        }
+
+        8% {
+                opacity: 1;
+                transform: translate(0, 0);
+        }
+
+        95% {
+                opacity: 1;
+                transform: translate(0, -950px);
+        }
+
+        98% {
+                opacity: 0.8;
+                transform: translate(0, -980px);
+        }
+
+        100% {
+                opacity: 0;
+                transform: translate(0, -1000px);
+        }
+}
+
+.kolbannerBox .title {
+        position: absolute;
+        z-index: 100;
+        left: 35%;
+        top: 6rem;
+}
+
+.kol-tabs {
+        background-color: #fdf1e1;
+}
+
+.mm-kol-tabs {
+        background-color: #fff8ee;
+}
+
+.kol-tabs ul li a {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+}
+
+.kol-tabs ul li.active a,
+.kol-tabs ul li:hover a {
+        color: #FF8800;
+}
+
+.kol-main {
+        background-color: #fffcf8;
+}
+
+.kol-contentBox {
+        border: 2px solid #333333;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-top: -2.5rem;
+}
+
+.tabBox li.nav-item {
+        margin: 2rem auto 0;
+}
+
+.tabBox .nav-item a.nav-link {
+        list-style: none;
+        display: block;
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        text-indent: -9999px;
+        height: 85px;
+}
+
+.nav-link-1 {
+        background: url(../images/kol/tabs-1.png) no-repeat center 0;
+}
+
+.nav-link-1:hover,
+.nav-link-1.active {
+        background: url(../images/kol/tabs-1-1.png) no-repeat center 0;
+}
+
+.nav-link-2 {
+        background: url(../images/kol/tabs-2.png) no-repeat center 0;
+}
+
+.nav-link-2:hover,
+.nav-link-2.active {
+        background: url(../images/kol/tabs-2-1.png) no-repeat center 0;
+}
+
+.nav-link-3 {
+        background: url(../images/kol/tabs-3.png) no-repeat center 0;
+}
+
+.nav-link-3:hover,
+.nav-link-3.active {
+        background: url(../images/kol/tabs-3-1.png) no-repeat center 0;
+}
+
+.kol-contentBox .tab-bar ul li a {
+        background-color: #ffedd6;
+        border-radius: 35px;
+        margin: 1rem 2rem;
+        text-align: center;
+}
+
+.tab-bar ul li a {
+        line-height: 2.5;
+        font-size: 1.2rem;
+        color: #333333;
+        text-align: center;
+        display: block;
+}
+
+.tab-bar ul li.active a {
+        color: #FFFFFF;
+        background-color: #FF8800;
+}
+
+.wf-container {
+        margin: 0 auto;
+        overflow: hidden;
+}
+
+.wf-column {
+        float: left;
+}
+
+.wf-box {
+        margin: 20px 10px;
+        width: 250px;
+}
+
+.kol-you-contentBox {
+        padding: 1.5rem 0;
+}
+
+.kol-you-contentBox h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 25%;
+        background-color: #ffe8cc;
+        border: 2px solid #000;
+        margin: 0.8rem auto 1.5rem;
+        padding: 0.8rem 0 1.7rem;
+        border-radius: 20px;
+        box-shadow: 8px 10px 0 0 #000000;
+}
+
+.kol-you-contentBox .kol-contentBox {
+        padding: 2rem;
+}
+
+.kol-you-contentBox .kol-contentBox h3{
+        min-height: 50px;
+        font-size: 1.1rem;
+}
+
+/* RESPONSIVE
+-------------------------------------------------- */
+/* Between Medium and Small size 1920x 1800 */
+@media only screen and (max-width: 1900px) and (min-width: 1800px) {}
+
+/* Between Medium and Small size 1800x 1281 */
+@media only screen and (max-width: 1800px) and (min-width: 1500px) {}
+
+@media only screen and (max-width: 1500px) and (min-width: 1367px) {}
+
+/* Between Medium and Small size 1366x 1281 */
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
+
+        @-webkit-keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -760px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -776px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -800px);
+                }
+        }
+
+        @keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -760px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -776px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -800px);
+                }
+        }
+
+}
+
+
+/* Between Medium and Small size 1280x 800 */
+@media only screen and (max-width: 1280px) and (min-width: 1023px) {
+
+        @-webkit-keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -712px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -727px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -750px);
+                }
+        }
+
+        @keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -712px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -727px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -750px);
+                }
+        }
+        .kol-you-contentBox h2{
+                width: 40%;
+        }
+}
+
+
+/* iPad 橫式 1024x768 */
+@media only screen and (max-width: 1024px) and (min-width: 970px) {
+
+        @-webkit-keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -475px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -485px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -500px);
+                }
+        }
+
+        @keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                95% {
+                        opacity: 1;
+                        transform: translate(0, -475px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -485px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -500px);
+                }
+        }
+        .kol-you-contentBox h2{
+                width: 40%;
+        }
+}
+
+/* iPad 直式 size800x600 */
+@media only screen and (max-width: 969px) and (min-width: 501px) {
+
+        .loop {
+                -webkit-animation-name: loop;
+                animation-name: loop;
+        }
+
+        @-webkit-keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                90% {
+                        opacity: 1;
+                        transform: translate(0, -475px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -485px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -500px);
+                }
+        }
+
+        @keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                10% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                90% {
+                        opacity: 1;
+                        transform: translate(0, -420px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -470px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -500px);
+                }
+        }
+        .kol-you-contentBox h2{
+                width: 40%;
+        }
+        .kol-tabs ul li a{
+                font-size: 1.1rem;
+        }
+}
+
+/* 660px and mobile */
+@media (max-width: 500px) {
+
+        .kolbannerBox .cover .pc-banner,
+        .kol-tabs {
+                display: none;
+        }
+
+        .kolbannerBox .cover .mm-banner,
+        .mm-kol-tabs {
+                display: block;
+        }
+
+        .kolbannerBox .cover {
+                height: 300px;
+        }
+
+        .kolbannerBox .cover .mm-banner {
+                -webkit-animation: loop 40s linear infinite;
+                animation: loop 40s linear infinite;
+        }
+
+        .loop {
+                -webkit-animation-name: loop;
+                animation-name: loop;
+        }
+
+        @-webkit-keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                5% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                90% {
+                        opacity: 1;
+                        transform: translate(0, -270px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -291px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -300px);
+                }
+        }
+
+        @keyframes loop {
+                0% {
+                        opacity: 0;
+                        transform: translate(0, 0);
+                }
+
+                3% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                5% {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                }
+
+                90% {
+                        opacity: 1;
+                        transform: translate(0, -270px);
+                }
+
+                97% {
+                        opacity: 0.8;
+                        transform: translate(0, -291px);
+                }
+
+                100% {
+                        opacity: 0;
+                        transform: translate(0, -300px);
+                }
+        }
+
+        .kol-main {
+                background-color: #FFFFFF;
+        }
+
+        .kolbannerBox .title {
+                top: 4.5rem;
+                left: 15%;
+        }
+
+        .kolbannerBox .title img {
+                width: 80%;
+        }
+
+        .sticky.is-sticky {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 60px;
+                z-index: 1000;
+                width: 100%;
+        }
+
+        .mm-kol-tabs li.nav-item {
+                width: 20%;
+        }
+
+        .mm-kol-tabs .nav-item a.nav-link {
+                text-align: center;
+                line-height: 1.5;
+                padding: 0.5rem 0.3rem;
+                margin: 0.6rem 0.2rem;
+                background-color: #ffe8cc;
+                border-radius: 5px;
+                font-size: 0.9rem;
+        }
+
+        .mm-kol-tabs .nav-item.active a.nav-link {
+                color: #FF8800;
+        }
+
+        .kol-contentBox {
+                margin-top: -2.5rem;
+        }
+
+        .kol-you-contentBox {
+                margin: 1rem 0;
+        }
+
+        .tabBox li.nav-item {
+                margin: 1rem 0.3rem 0;
+        }
+
+        .nav-link-1 {
+                background: url(../images/kol/mm-tabs-1.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .nav-link-1:hover,
+        .nav-link-1.active {
+                background: url(../images/kol/mm-tabs-1-1.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .nav-link-2 {
+                background: url(../images/kol/mm-tabs-2.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .nav-link-2:hover,
+        .nav-link-2.active {
+                background: url(../images/kol/mm-tabs-2-1.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .nav-link-3 {
+                background: url(../images/kol/mm-tabs-3.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .nav-link-3:hover,
+        .nav-link-3.active {
+                background: url(../images/kol/mm-tabs-3-1.png) no-repeat center 0;
+                background-size: contain;
+        }
+
+        .kol-contentBox .tab-bar ul li a {
+                margin: 0 0.3rem;
+                font-size: 1rem;
+        }
+
+        .kol-sectionBox {
+                margin: 0 !important;
+                padding: 0 0 1rem 0 !important;
+        }
+
+        .wf-box {
+                margin: 20px 0;
+                width: 100%;
+        }
+
+        .wf-box iframe {
+                max-width: 100% !important;
+                min-width: 100% !important;
+        }
+
+        .kol-you-contentBox h2 {
+                font-size: 1.4rem;
+                text-align: center;
+                margin: 1rem auto 1rem;
+                width: 70%;
+        }
+        .kol-you-contentBox .kol-contentBox{
+                padding: 1rem;
+        }
+}
+
+/* 321px and mobile */
+@media only screen and (max-width: 320px) {
+        .mm-kol-tabs .nav-item a.nav-link {
+                font-size: 0.8rem;
+        }
+}
